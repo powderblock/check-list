@@ -1,14 +1,12 @@
 <html>
-	<head>
-		<link rel="stylesheet" type="text/css" href="styles.css">
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
-		<title>Check List</title>
-	</head>
-	
-	<body>
+	<script src = "script.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
 	<body background = "images/bg.png">
-	<input type ="text" name = "addNewItemBox" id = "addItemBox">
-	<button type = "button" onclick="document.getElementById('list').innerHTML += addItemBox.value + '<br />'">Add item to list</button>
-	<p id="list"></p>
+	<body>
+		<input type = "text" id = "textbox">
+		<button onclick="addToList()">Add Item to List</button>
+
+		<ul id = "list"></ul>
+		<ul id = "completed">
 	</body>
 </html>
