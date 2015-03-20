@@ -1,9 +1,11 @@
 function addToList() {
-	var list = document.getElementById('list');
-	item = document.createElement('li');
-	item.innerHTML = '<input type= "checkbox" onClick = "removeFromList()"/>'+textbox.value;
-	list.appendChild(item);
-	document.getElementById("textbox").value= "";
+	if(textbox.value != ''){
+		var list = document.getElementById('list');
+		item = document.createElement('li');
+		item.innerHTML = '<input type= "checkbox" onClick = "removeFromList()"/>'+textbox.value;
+		list.appendChild(item);
+		document.getElementById("textbox").value= "";
+	}
 }
 
 function removeFromList() {
