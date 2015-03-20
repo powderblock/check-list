@@ -14,6 +14,8 @@ function removeFromList() {
 		item;
 	while (item = items.pop()) {
 		if (item.firstChild && item.firstChild.checked) {
+			var text = list.firstChild.innerText;
+			alert(text);
 			list.removeChild(item);
 		}
 	}
