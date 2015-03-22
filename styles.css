@@ -2,3 +2,21 @@ html, body {
 	font-family: 'Open Sans', sans-serif;
 	height: 100%;
 }
+
+#list {
+	padding-bottom: 1%;
+}
+
+input[type=checkbox] {
+	/* All browsers except webkit*/
+	transform: scale(2);
+
+	/* Webkit browsers*/
+	-webkit-transform: scale(2);
+	margin: 10px;
+	padding: 10px;
+}
+
+ul {
+	font-size: 175%;
+}

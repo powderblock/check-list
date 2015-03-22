@@ -35,3 +35,10 @@ function addBack() {
 		}
 	}
 }
+
+function wasEnter(key) {
+    if (key.keyCode == 13) {
+		addToList();
+        return false;
+    }
+}
